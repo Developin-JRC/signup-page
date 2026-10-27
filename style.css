@@ -1,0 +1,20 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: paleturquoise;
+    font-family: fantasy, serif;
+    margin: 0 24px;
+}
+
+h1{
+
+    color: rosybrown;
+}
+
+h2{
+    color:burlywood;
+}
+
