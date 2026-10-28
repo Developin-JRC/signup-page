@@ -49,3 +49,15 @@ button{
     background-color: coral;
     color:azure;
 }
+
+/* A pseudo-class styles an element only while it's in a certain state.*/
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid darkgreen;
+    outline-offset: 2px;
+}
+
+input:user-invalid {
+    border: 2px solid crimson solid;
+}
