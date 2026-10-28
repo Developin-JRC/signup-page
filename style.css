@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 
 html {
     scroll-behavior: smooth;
@@ -22,4 +25,27 @@ h2{
     margin: 32px 0;
     border: 3px dashed darkolivegreen;
     padding: 60px;
+}
+
+
+/* Form styles */
+label{
+    display: block;
+    margin-top: 16px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    max-width: 30rem;
+   /* font: inherit; */
+}
+
+button{
+    margin-top: 16px;
+    display: block;
+    padding: 10px;
+    background-color: coral;
+    color:azure;
 }

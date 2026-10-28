@@ -15,7 +15,7 @@
         </p>
     </header>
 
-    <!-- Day 1:  Navigation --> 
+   <!-- Day 1:  Navigation --> 
      <nav>
         <a href="#about">About</a>
         <a href="#schedule"> Schedule</a>
@@ -32,19 +32,44 @@
         </section>
 
         <!--Section 2 -->
-         <section id="schedule">
+         <section id="schedule" class="box">
             <h2>See our Schedule below.</h2>
             <p>There are group meetings coordinated by club leaders to lead fitness sessions, virtually and/or in person so you can find daily support. </p>
          </section>
           
         <!--Section 3 -->
-         <section id="join">
+         <section id="join" class="box">
             <h2>Join Us</h2>
             <p>Complete the form below to learn more and join us!</p>
-         </section>
-     </main>
+      
+   <!--Day 2 -- Form -->   
+         <form>
+         <label for="name">Your Name</label>
+         <input type="text" id="name" name="name required">
 
-     <footer>Created by Janet Badia</footer>
+         <label for="email">Your Email</label>
+         <input type="email" name="email" id=""email" placeholder="you@email.com">
+     
+         <label for="session">Which level of fitness do you identify with? (Intermediate and Advanced must pass assessment and be medically cleared.)</label>
+      
+            <select id="session" name="session">
+            <option value="">Choose a session</option>
+            <option value="beginner">Choose a session</option>
+            <option value="intermediate">Choose a session</option>
+            <option value="advanced">Choose a session</option>
+            <option value="youth">Choose a session</option>
+            </select>
+
+         <label for="message">Anything we should know?</label>
+         <textarea id="message" name="message" rows="4"></textarea>
+      
+         <button type="submit">Sign Up</button>
+      </form>
+
+      </section>
+      </main>
+
+     <footer>Created by Janet Badia @ Juicy Remedies</footer>
      
     <script src="script.js"></script>
 </body>
