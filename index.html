@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jrHealth Club</title>
+    <title>JR Health Club</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -11,33 +11,46 @@
 <body>
     <header>
         <h1>JR Health Club</h1>
-        <p>Daily meetups for families at different levels of health, youth, beginner, intermediate, advanced. One spa day weekly per level coordinated around need and availability.
+        <p>Daily meetups for families at different levels of health: youth, beginner, intermediate, advanced. <br>
+
         </p>
     </header>
 
    <!-- Day 1:  Navigation --> 
-     <nav>
-        <a href="#about">About</a>
-        <a href="#schedule"> Schedule</a>
-        <a href="#join"> Join</a>
-     </nav>
+      <nav>
+        <a href="#about">ABOUT</a>
+        <a href="#program"> PROGRAMS</a>
+        <a href="#join"> JOIN</a>
+      </nav>
 
     <!-- Day 1:  Main: 3 sections -->
-     <main>
-        <!--Section 1 -->
+      <main>
+      <!--Section 1 -->
         <section id="about" class="box">
             <h2>Health Club for Social Self Care</h2>
-            <p>A healing fitness club for families where movement is celebrated as a foundation for connection and healthy living.</p>
-            
+            <p>A healing fitness club for families where movement is celebrated as a foundation for connection and healthy living.</p> 
         </section>
 
-        <!--Section 2 -->
-         <section id="schedule" class="box">
-            <h2>See our Schedule below.</h2>
-            <p>There are group meetings coordinated by club leaders to lead fitness sessions, virtually and/or in person so you can find daily support. </p>
+      <!--Section 2 -->
+      <!--Available programs by fitness levels: youth, beginner, intermediate, advanced -->
+         <section id="program" class="box">
+            <h2>See our Programs.</h2>
+            <p>Programs are coordinated both virtually or in person to accommodate your family's needs.</p>
+         
+            <button type="submit" id="beginner">Beginners</button>
+            <p id="beginner"></p>
+            
+            <button type="submit" id="intermediate">Intermediates</button>
+            <p id="intermediate"></p>
+            
+            <button type="submit" id="advanced">Advanced</button>
+            <p id="advanced"></p>
+            
+            <button type="submit" id="youth">Youth</button>
+            <p id="youth"></p>
          </section>
           
-        <!--Section 3 -->
+      <!--Section 3 -->
          <section id="join" class="box">
             <h2>Join Us</h2>
             <p>Complete the form below to learn more and join us!</p>
@@ -45,19 +58,19 @@
    <!--Day 2 -- Form -->   
          <form>
          <label for="name">Your Name</label>
-         <input type="text" id="name" name="name required">
+         <input type="text" id="name" name="name" placeholder="Jane Doe" required> 
 
          <label for="email">Your Email</label>
-         <input type="email" name="email" id=""email" placeholder="you@email.com">
+         <input type="email" id="email" name="email" placeholder="you@email.com" required>
      
          <label for="session">Which level of fitness do you identify with? (Intermediate and Advanced must pass assessment and be medically cleared.)</label>
       
             <select id="session" name="session">
             <option value="">Choose a session</option>
-            <option value="beginner">Choose a session</option>
-            <option value="intermediate">Choose a session</option>
-            <option value="advanced">Choose a session</option>
-            <option value="youth">Choose a session</option>
+            <option value="beginner">Beginners Session</option>
+            <option value="intermediate">Intermediates Session</option>
+            <option value="advanced">Advanced session</option>
+            <option value="youth">Youth Session</option>
             </select>
 
          <label for="message">Anything we should know?</label>
