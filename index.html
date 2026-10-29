@@ -25,19 +25,42 @@
 
     <!-- Day 1:  Main: 3 sections -->
       <main>
-      <!--Section 1 -->
+        
+         <section id="reasons">
+            <div ></div>
+         </section>
+      <!--Section 1 About-->
         <section id="about" class="box">
             <h2>Health Club for Social Self Care</h2>
             <p>A healing fitness club for families where movement is celebrated as a foundation for connection and healthy living.</p> 
         </section>
+<section id="reasons">
+<h2>Three reasons to join</h2>
+   <div class="cards">
+      <h3>Happier You</h3>
+      <p>A stronger bodies to do what we love</p>
+      <div class="cards">
+         <h3>Strengthen Family Connections</h3>
+         <p>The family who trains together, stay together.</p>
+         <div class="cards">
+            <h3>Healthier Communities</h3>
+            <p>A program for every member of the family.</p>
+         </div>
+      </div>
+   </div>
+</section>
 
-      <!--Section 2 -->
+<!--this section shows the difference between BLOCK and INLINE elements-->
+      <section id="how-built" class=""compare">
+      <h2>How this page is built</h2>
+   <div>This is a div and a block element <span>span tag<span>and a <a href="#join">link</span></div></section>
+      <!--Section 2 Programs-->
       <!--Available programs by fitness levels: youth, beginner, intermediate, advanced -->
          <section id="program" class="box">
-            <h2>See our Programs.</h2>
+            <h2>See our Pro            <button type="submit" id="beginner">Beginners</button>
+grams.</h2>
             <p>Programs are coordinated both virtually or in person to accommodate your family's needs.</p>
          
-            <button type="submit" id="beginner">Beginners</button>
             <p id="beginner"></p>
             
             <button type="submit" id="intermediate">Intermediates</button>
@@ -50,8 +73,16 @@
             <p id="youth"></p>
          </section>
           
-      <!--Section 3 -->
+      <!--Section 3 Join-->
          <section id="join" class="box">
+            <form autocomplete="off">
+               <input type="password" id="password" name="password" required> </div>
+               placeholder="you@example.com"
+               required
+               />
+
+               <label for="password">Password</label>
+            </form>
             <h2>Join Us</h2>
             <p>Complete the form below to learn more and join us!</p>
       
@@ -62,6 +93,9 @@
 
          <label for="email">Your Email</label>
          <input type="email" id="email" name="email" placeholder="you@email.com" required>
+
+         <label for="password"></label>
+         <input type="password" id="password" name="password" required>Create a password for the members' page</label>
      
          <label for="session">Which level of fitness do you identify with? (Intermediate and Advanced must pass assessment and be medically cleared.)</label>
       

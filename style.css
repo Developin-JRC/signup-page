@@ -2,9 +2,11 @@
     box-sizing: border-box;
 }
 
+/*When you click on a new link, the page glides smoothly instead of jumping instantly*/
 html {
     scroll-behavior: smooth;
 }
+
 
 body {
     background-color: paleturquoise;
@@ -60,4 +62,59 @@ textarea:focus {
 
 input:user-invalid {
     border: 2px solid crimson solid;
+}
+
+/*Day 3: Coming soon: we will style .cards and .card here up side by side*/
+.cards{
+display: flex;
+gap: 16px;
+flex-wrap: wrap;
+}
+
+.card{
+    flex: 1 1 200px;
+    border: 3px solid darkgreen;
+    padding: 16px;
+    background-color: rgb(30, 48, 136);
+    border-radius: 10px;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 30rems;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.compare * {
+    outline: 2px dashed tomato;
+}
+
+/* Nav styles */
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding: 8px 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+nav a{
+    text-decoration: none;
+    color: deeppink;
+    font-weight: bold;
+}
+
+nav a:hover{
+    background-color: whitesmoke;
+    color: deeppink;
+    padding: 4px;
+    border-radius: 4px;
+
 }
