@@ -50,73 +50,74 @@
    </div>
 </section>
 
-<!--this section shows the difference between BLOCK and INLINE elements-->
+<!--this section shows the difference between BLOCK and INLINE elements
       <section id="how-built" class=""compare">
       <h2>How this page is built</h2>
-   <div>This is a div and a block element <span>span tag<span>and a <a href="#join">link</span></div></section>
-      <!--Section 2 Programs-->
-      <!--Available programs by fitness levels: youth, beginner, intermediate, advanced -->
-         <section id="program" class="box">
-            <h2>See our Pro            <button type="submit" id="beginner">Beginners</button>
-grams.</h2>
-            <p>Programs are coordinated both virtually or in person to accommodate your family's needs.</p>
-         
-            <p id="beginner"></p>
-            
-            <button type="submit" id="intermediate">Intermediates</button>
-            <p id="intermediate"></p>
-            
-            <button type="submit" id="advanced">Advanced</button>
-            <p id="advanced"></p>
-            
-            <button type="submit" id="youth">Youth</button>
-            <p id="youth"></p>
-         </section>
-          
-      <!--Section 3 Join-->
-         <section id="join" class="box">
-            <form autocomplete="off">
-               <input type="password" id="password" name="password" required> </div>
-               placeholder="you@example.com"
-               required
-               />
+   <div>This is a div and a block element <span>span tag<span>and a <a href="#join">link</span></div></section>-->
+   
+<!--Section 2 Programs -->
+<!--Available programs by fitness levels: youth, beginner, intermediate, advanced -->
+<section id="program" class="box">
+   <h2>See our Programs</h2><p>Sessions are coordinated both virtually or in person to accommodate your family's needs.</p>
 
-               <label for="password">Password</label>
-            </form>
-            <h2>Join Us</h2>
-            <p>Complete the form below to learn more and join us!</p>
+   <button type="submit" id="beginner">Beginners</button>
+      <p id="beginner"></p>
       
-   <!--Day 2 -- Form -->   
-         <form>
+   <button type="submit" id="intermediate">Intermediates</button>
+      <p id="intermediate"></p>
+            
+   <button type="submit" id="advanced">Advanced</button>
+      <p id="advanced"></p>
+            
+   <button type="submit" id="youth">Youth</button>
+      <p id="youth"></p>
+</section>
+          
+<!--Section 3 Join-->
+<section id="join" class="box">
+   <form autocomplete="off">
+      <h2>Join Us</h2>
+      <p>Complete the form below to join us!</p>
+   
+      <div>
          <label for="name">Your Name</label>
          <input type="text" id="name" name="name" placeholder="Jane Doe" required> 
+      </div>
 
+      <div>
          <label for="email">Your Email</label>
          <input type="email" id="email" name="email" placeholder="you@email.com" required>
-
-         <label for="password"></label>
-         <input type="password" id="password" name="password" required>Create a password for the members' page</label>
-     
-         <label for="session">Which level of fitness do you identify with? (Intermediate and Advanced must pass assessment and be medically cleared.)</label>
+      </div>
       
-            <select id="session" name="session">
+      <div>
+         <label for="password">Password</label>
+         <input type="password" id="password" name="password" required><!--Create a password for the members' page--></label>
+      </div>
+      
+      <div>
+      <!--Choose level of fitness to join under-->
+      <label>Which level of fitness do you identify with?</label>
+         <select id="session" name="session">
             <option value="">Choose a session</option>
             <option value="beginner">Beginners Session</option>
             <option value="intermediate">Intermediates Session</option>
             <option value="advanced">Advanced session</option>
             <option value="youth">Youth Session</option>
-            </select>
-
-         <label for="message">Anything we should know?</label>
+         </select>
+         <h6><i>(Intermediate and Advanced must pass assessment and be medically cleared.)</i></h6>
+      </div>
+         
+      <div><label for="message">Anything we should know?</label>
          <textarea id="message" name="message" rows="4"></textarea>
-      
+      </div>
+   
+      <!--button to sign up -->
          <button type="submit">Sign Up</button>
       </form>
+   </section>
+   </main>
 
-      </section>
-      </main>
-
-     <footer>Created by Janet Badia @ Juicy Remedies</footer>
+   <footer>Created by Janet Badia @ Juicy Remedies</footer>
      
     <script src="script.js"></script>
 </body>

@@ -33,7 +33,6 @@ h2{
 /* Form styles */
 label{
     display: block;
-    margin-top: 16px;
     font-weight: bold;
 }
 
@@ -45,7 +44,6 @@ input, select, textarea {
 }
 
 button{
-    margin-top: 16px;
     display: block;
     padding: 10px;
     background-color: coral;
