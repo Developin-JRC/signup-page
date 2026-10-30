@@ -114,5 +114,24 @@ nav a:hover{
     color: plum;
     padding: 4px;
     border-radius: 4px;
+}
 
+.hero {
+    background-color: rgba(0, 100, 0, 0.85);
+    color: white;
+    padding: 64px 24px;
+    text-align: center;
+}
+
+.cta {
+    display: inline-block;background-color: gold;
+    color: black;
+    padding: 12px 24px;
+    corner-shape: round 8px;
+    font: bold;
+    font-style: normal;
+}
+
+@media (min-width: 700px) {
+    /* normal CSS rules go in here */
 }
