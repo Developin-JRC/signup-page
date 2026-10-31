@@ -124,7 +124,8 @@ nav a:hover{
 }
 
 .cta {
-    display: inline-block;background-color: gold;
+    display: inline-block;
+    background-color: gold;
     color: black;
     padding: 12px 24px;
     corner-shape: round 8px;
