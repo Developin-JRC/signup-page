@@ -29,3 +29,8 @@ advancedButton.addEventListener("click", showNextMeeting);
 function sayBye(){
   console.log("Awesome workout! See you next session!")
 }
+
+function toggleTheme(){
+  document.body.classList.toggle("dark");
+  
+}

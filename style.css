@@ -2,6 +2,17 @@
     box-sizing: border-box;
 }
 
+:root {
+    --brand: orangered; /* make it */
+    --page-bg: whitesmoke;
+    --text: blue;
+
+}
+
+h1 {
+    color: var(--brand); /* use it */
+}
+
 /*When you click on a new link, the page glides smoothly instead of jumping instantly*/
 html {
     scroll-behavior: smooth;
@@ -9,23 +20,24 @@ html {
 
 
 body {
-    background-color: paleturquoise;
-    font-family: fantasy, serif;
+    background-color: var(--page-bg);
+    font-family: cursive;
+    color: var(--text);
     margin: 0 24px;
 }
 
-h1{
-    color:rosybrown;
+h2{
+    color:purple;
 }
 
-h2{
-    color:burlywood;
+h3 {
+    color: var(--brand);
 }
 
 .box {
     background-color: whitesmoke;
     margin: 32px 0;
-    border: 3px dashed darkolivegreen;
+    border: 3px dashed purple;
     padding: 60px;
 }
 
@@ -46,7 +58,7 @@ input, select, textarea {
 button{
     display: block;
     padding: 10px;
-    background-color: coral;
+    background-color: orange;
     color:azure;
 }
 
@@ -54,7 +66,7 @@ button{
 input:focus,
 select:focus,
 textarea:focus {
-    outline: 3px solid darkgreen;
+    outline: 3px solid darkslategray;
     outline-offset: 2px;
 }
 
@@ -71,7 +83,7 @@ flex-wrap: wrap;
 
 .card{
     flex: 1 1 200px;
-    border: 3px solid darkgreen;
+    border: 3px solid orange;
     padding: 16px;
     background-color: rgb(30, 48, 136);
     border-radius: 10px;
@@ -105,27 +117,27 @@ nav{
 
 nav a{
     text-decoration: none;
-    color: deeppink;
+    color: orangered;
     font-weight: bold;
 }
 
 nav a:hover{
     background-color: whitesmoke;
-    color: plum;
+    color: purple;
     padding: 4px;
     border-radius: 4px;
 }
 
 .hero {
-    background-color: rgba(0, 100, 0, 0.85);
-    color: white;
+    background-color: darkblue;
+    color: whitesmoke;
     padding: 64px 24px;
     text-align: center;
 }
 
 .cta {
     display: inline-block;
-    background-color: gold;
+    background-color: orange;
     color: black;
     padding: 12px 24px;
     corner-shape: round 8px;
@@ -136,5 +148,15 @@ nav a:hover{
 @media (min-width: 700px) {
     .hero h2 {
     font-size: 3rem;
+    }
 }
+
+body.dark {
+    --page-bg: navy;
+    --text: whitesmoke;
+    --brand: rgb(227, 175, 79);
+}
+
+body.dark nav a{
+    color: rgb(179, 179, 255);
 }
