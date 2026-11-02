@@ -36,6 +36,7 @@ h3 {
 
 .box {
     background-color: whitesmoke;
+    color: darkblue;
     margin: 32px 0;
     border: 3px dashed purple;
     padding: 60px;
@@ -52,7 +53,7 @@ input, select, textarea {
     width: 100%;
     padding: 8px;
     max-width: 30rem;
-   /* font: inherit; */
+    font: inherit;
 }
 
 button{
@@ -79,13 +80,14 @@ input:user-invalid {
 display: flex;
 gap: 16px;
 flex-wrap: wrap;
+background-color: whitesmoke;
 }
 
 .card{
     flex: 1 1 200px;
     border: 3px solid orange;
     padding: 16px;
-    background-color: rgb(30, 48, 136);
+    background-color: black;
     border-radius: 10px;
 }
 
@@ -129,8 +131,8 @@ nav a:hover{
 }
 
 .hero {
-    background-color: darkblue;
-    color: whitesmoke;
+    background-color: whitesmoke;
+    color: darkblue;
     padding: 64px 24px;
     text-align: center;
 }
@@ -152,11 +154,12 @@ nav a:hover{
 }
 
 body.dark {
-    --page-bg: navy;
+    --page-bg: darkblue;
     --text: whitesmoke;
     --brand: rgb(227, 175, 79);
 }
 
 body.dark nav a{
-    color: rgb(179, 179, 255);
+    color: whitesmoke;
+
 }
