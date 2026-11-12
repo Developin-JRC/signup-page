@@ -10,7 +10,7 @@
 }
 
 h1 {
-    color: var(--brand); /* use it */
+    color: red; /*var(--brand); use it */
 }
 
 /*When you click on a new link, the page glides smoothly instead of jumping instantly*/
